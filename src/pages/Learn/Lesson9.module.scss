@@ -1,0 +1,240 @@
+@use '../../assets/styles/variables';
+
+.problemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.problemCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.problemImageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(231, 76, 60, 0.8);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+.problemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.problemDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.detailColumn {
+  h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.techniquesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.techCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.techImageContainer {
+  height: 250px;
+  overflow: hidden;
+}
+
+.techImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+  .techCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.techContent {
+  padding: 20px;
+
+  h3 {
+    color: #3a7bd5;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.techTools {
+  background: #f5f7fa;
+  padding: 15px;
+  border-radius: 6px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.preventionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tipCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.tipImageContainer {
+  height: 200px;
+  overflow: hidden;
+}
+
+.tipImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+  .tipCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.tipContent {
+  padding: 20px;
+
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.finalTips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.finalTip {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #3a7bd5;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
+
+.finalTipImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    height: auto;
+  }
+}

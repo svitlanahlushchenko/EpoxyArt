@@ -1,0 +1,224 @@
+@use '../../assets/styles/variables';
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.methodCard {
+  background: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.methodImageContainer {
+  height: 200px;
+  overflow: hidden;
+}
+
+.methodImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+  .methodCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.methodContent {
+  padding: 20px;
+
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+}
+
+.methodTip {
+  background: #e3f2fd;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border-left: 3px solid #3498db;
+}
+
+.techniquesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.techCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.techImageContainer {
+  height: 250px;
+  overflow: hidden;
+}
+
+.techImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+  .techCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.techContent {
+  padding: 20px;
+
+  h3 {
+    color: #3a7bd5;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+}
+
+.problemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.problemCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.problemImageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(231, 76, 60, 0.8);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+.problemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.problemSolution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.solutionColumn {
+  h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.tipsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tipCard {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.tipImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tipContent {
+  padding: 20px;
+
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+}

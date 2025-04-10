@@ -1,0 +1,46 @@
+@use './variables';
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: variables.$text-dark;
+  background-color: variables.$light-gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+h2 {
+  color: variables.$primary;
+  border-bottom: 2px solid variables.$primary;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}

@@ -1,0 +1,70 @@
+@use '../../assets/styles/variables';
+
+.detailedSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.step {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid variables.$primary;
+  transition: transform 0.3s ease;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #555;
+  }
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  div {
+    h3 {
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.list {
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+    strong {
+      color: #2c3e50;
+    }
+  }
+}

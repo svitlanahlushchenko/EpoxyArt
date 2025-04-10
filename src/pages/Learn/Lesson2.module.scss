@@ -1,0 +1,53 @@
+@use '../../assets/styles/variables';
+
+.header {
+  text-align: center;
+  padding: 20px;
+
+  .mainPhoto {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+}
+
+.list {
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    strong {
+      color: #2c3e50;
+    }
+  }
+}
+
+.step {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid variables.$primary;
+
+  h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

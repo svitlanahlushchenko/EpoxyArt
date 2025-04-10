@@ -1,0 +1,43 @@
+@use '../styles/variables';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid variables.$light-gray;
+
+  a {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+
+    &.backButton {
+      color: variables.$second-blue;
+      border: 2px solid variables.$second-blue;
+
+      &:hover {
+        background: variables.$light-blue;
+        text-decoration: none;
+      }
+    }
+
+    &.nextButton {
+      color: white;
+      background: variables.$second-blue;
+      border: 2px solid variables.$second-blue;
+
+      &:hover {
+        background: variables.$second-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.buttonSpacer {
+  flex-grow: 1;
+}
