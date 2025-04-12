@@ -23,12 +23,13 @@ const Lesson2 = () => {
                 src='/images/safety-gear.png'
                 alt='Ochranné pomôcky'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p className='importantText'>
                   Nikdy nepracujte s živicou bez základnej ochrany!
                 </p>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Respirátor</strong> - certifikovaný FFP2 alebo
                     lepší, výmena každých 2 hodín
@@ -101,7 +102,7 @@ const Lesson2 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Bezpečné postupy:</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Nekontaminácia:</strong> Nikdy nevracejte premiešanú
                     živicu späť do nádoby
@@ -118,7 +119,7 @@ const Lesson2 = () => {
               </div>
               <div>
                 <h3>Čistenie a likvidácia:</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Nástroje:</strong> Čistite acetónom hneď po použití
                   </li>

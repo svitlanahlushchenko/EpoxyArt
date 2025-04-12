@@ -151,6 +151,7 @@ const Lesson7 = () => {
               <img
                 src='/images/coloring-basics.png'
                 alt='Základy farbenia'
+                loading='lazy'
                 className='halfWidthImage'
               />
               <div>
@@ -175,6 +176,7 @@ const Lesson7 = () => {
                 <img
                   src={category.image}
                   alt={category.category}
+                  loading='lazy'
                   className={styles.categoryImage}
                 />
               </div>
@@ -185,6 +187,7 @@ const Lesson7 = () => {
                       <img
                         src={item.image}
                         alt={item.name}
+                        loading='lazy'
                         className={styles.colorImage}
                       />
                     </div>
@@ -219,6 +222,7 @@ const Lesson7 = () => {
                     <img
                       src={tech.image}
                       alt={tech.name}
+                      loading='lazy'
                       className={styles.techImage}
                     />
                   </div>
@@ -245,7 +249,7 @@ const Lesson7 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Nízka teplota (15-20°C)</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>Pomalšie tvrdnutie</li>
                   <li>Väčšia šanca na sedimentáciu</li>
                   <li>Jemnejšie prechody farieb</li>
@@ -253,7 +257,7 @@ const Lesson7 = () => {
               </div>
               <div>
                 <h3>Vysoká teplota (25-30°C)</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>Rýchlejšie tvrdnutie</li>
                   <li>Lepšie rozptýlenie pigmentov</li>
                   <li>Výraznejšie bunkové efekty</li>

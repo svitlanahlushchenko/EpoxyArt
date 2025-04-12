@@ -106,6 +106,7 @@ const Lesson8 = () => {
                 src='/images/common-issues.png'
                 alt='Tvorba bublín'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>
@@ -133,6 +134,7 @@ const Lesson8 = () => {
                       src={method.image}
                       alt={method.title}
                       className={styles.methodImage}
+                      loading='lazy'
                     />
                   </div>
                   <div className={styles.methodContent}>
@@ -159,6 +161,7 @@ const Lesson8 = () => {
                       src={tech.image}
                       alt={tech.title}
                       className={styles.techImage}
+                      loading='lazy'
                     />
                   </div>
                   <div className={styles.techContent}>
@@ -189,6 +192,7 @@ const Lesson8 = () => {
                       src={problem.image}
                       alt={problem.problem}
                       className={styles.problemImage}
+                      loading='lazy'
                     />
                     <h3>{problem.problem}</h3>
                   </div>
@@ -224,6 +228,7 @@ const Lesson8 = () => {
                   src='/images/alcohol-spray.png'
                   alt='Postrek alkoholom'
                   className={styles.tipImage}
+                  loading='lazy'
                 />
                 <div className={styles.tipContent}>
                   <h3>Postrek izopropylalkoholom</h3>
@@ -239,6 +244,7 @@ const Lesson8 = () => {
                   src='/images/thin-layers.png'
                   alt='Tenké vrstvy'
                   className={styles.tipImage}
+                  loading='lazy'
                 />
                 <div className={styles.tipContent}>
                   <h3>Aplikácia tenkých vrstiev</h3>

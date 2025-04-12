@@ -63,6 +63,7 @@ const Lesson3 = () => {
                 src='/images/epoxy-chemistry.png'
                 alt='Chemická štruktúra epoxidovej živice'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>

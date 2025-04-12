@@ -159,22 +159,6 @@
   }
 }
 
-.tipImageContainer {
-  height: 200px;
-  overflow: hidden;
-}
-
-.tipImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-
-  .tipCard:hover & {
-    transform: scale(1.05);
-  }
-}
-
 .tipContent {
   padding: 20px;
 
@@ -223,18 +207,5 @@
   p {
     margin-bottom: 0;
     line-height: 1.6;
-  }
-}
-
-.finalTipImage {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-
-  @media (max-width: 500px) {
-    width: 100%;
-    height: auto;
   }
 }

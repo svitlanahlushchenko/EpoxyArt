@@ -71,6 +71,7 @@ const Lesson4 = () => {
                 src='/images/epoxy-uses.png'
                 alt='Využitie epoxidovej živice'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>
@@ -99,6 +100,7 @@ const Lesson4 = () => {
                         src={item.image}
                         alt={item.title}
                         className={styles.applicationImage}
+                        loading='lazy'
                       />
                     </div>
                     <div className={styles.applicationContent}>
@@ -117,7 +119,7 @@ const Lesson4 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Kritériá výberu</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Hrúbka vrstvy:</strong> Pre hrubé odliatky špeciálne
                     typy
@@ -134,7 +136,7 @@ const Lesson4 = () => {
               </div>
               <div>
                 <h3>Odporúčané značky</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Pre umenie:</strong> ArtResin, Crystal Resin
                   </li>

@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <NavLink to='/' className={styles.logoLink}>
+        <NavLink to='/' className='logoLink'>
           <img
             src='/images/logo.png'
             alt='EpoxyArt Logo'
-            className={styles.logoImage}
+            className='logoImage'
           />
-          <span className={styles.logoText}>EpoxyArt</span>
+          <span className='logoText'>EpoxyArt</span>
         </NavLink>
 
         <ul className={styles.menu}>

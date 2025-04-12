@@ -24,8 +24,7 @@ const Footer = () => {
         {/* Розділ контактів */}
         <div>
           <h3 style={{ color: '#3a7bd5' }}>Kontakt</h3>
-          <p>Email: info@epoxyart.sk</p>
-          <p>Telefón: +421 123 456 789</p>
+          <p>Email: info.epoxy.art.sk@gmail.com</p>
         </div>
 
         {/* Розділ навігації */}
@@ -62,12 +61,15 @@ const Footer = () => {
           <div
             style={{ display: 'flex', justifyContent: 'center', gap: '15px' }}
           >
-            <a href='https://facebook.com' style={{ color: 'white' }}>
-              Facebook
+            <a
+              href='https://www.tiktok.com/@epoxy_art_resin?_t=ZN-8vS2ZQUaiXe&_r=1'
+              style={{ color: 'white' }}
+            >
+              TikTok
             </a>
-            <a href='https://instagram.com' style={{ color: 'white' }}>
+            {/* <a href='https://instagram.com' style={{ color: 'white' }}>
               Instagram
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -70,30 +70,6 @@
   }
 }
 
-.list {
-  padding-left: 20px;
-
-  li {
-    margin-bottom: 12px;
-    padding-left: 10px;
-    position: relative;
-    font-size: 1.1rem;
-    line-height: 1.6;
-
-    &::before {
-      content: '•';
-      color: #3a7bd5;
-      position: absolute;
-      left: 0;
-      font-weight: bold;
-    }
-
-    strong {
-      color: #2c3e50;
-    }
-  }
-}
-
 .problemsTable {
   border: 1px solid #e0e0e0;
   border-radius: 8px;

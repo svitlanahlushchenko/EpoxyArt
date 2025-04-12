@@ -23,12 +23,13 @@ const Lesson1 = () => {
                 src='/images/start.png'
                 alt='Základné pomôcky'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p className='importantText'>
                   Vždy pracujte v dobre vetranom priestore s teplotou 20-25°C.
                 </p>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Epoxidová živica + tvrdidlo</strong> - skontrolujte
                     dátum spotreby
@@ -101,7 +102,7 @@ const Lesson1 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Techniky aplikácie:</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Liatie:</strong> Pre formy a hladké povrchy
                   </li>
@@ -115,7 +116,7 @@ const Lesson1 = () => {
               </div>
               <div>
                 <h3>Podmienky vytvrdzovania:</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Čas:</strong> 24-72 hodín podľa typu
                   </li>

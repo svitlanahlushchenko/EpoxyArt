@@ -120,6 +120,7 @@ const Lesson5 = () => {
                 src='/images/materials-overview.png'
                 alt='Materiály pre prácu s epoxidom'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>
@@ -181,7 +182,7 @@ const Lesson5 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Základné pravidlá</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>Uchovávajte v suchu pri teplote 15-25°C</li>
                   <li>Chráňte pred priamym slnečným žiarením</li>
                   <li>Udržiavajte pôvodné obaly tesne uzavreté</li>
@@ -189,7 +190,7 @@ const Lesson5 = () => {
               </div>
               <div>
                 <h3>Životnosť materiálov</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>Neotvorená živica: 6-12 mesiacov</li>
                   <li>Otvorená živica: 3-6 mesiacov</li>
                   <li>Pigmenty: 12-24 mesiacov</li>

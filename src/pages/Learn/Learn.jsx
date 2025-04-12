@@ -77,6 +77,7 @@ const Learn = () => {
                 src={lesson.icon}
                 alt='icon-resin'
                 className={styles.lessonIcon}
+                loading='lazy'
               />
             </div>
             <p className={styles.description}>{lesson.description}</p>

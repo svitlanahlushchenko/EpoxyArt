@@ -78,6 +78,7 @@ const Lesson6 = () => {
                 src='/images/surface-preparation.png'
                 alt='Príprava povrchu'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>
@@ -120,7 +121,7 @@ const Lesson6 = () => {
             <div className={styles.twoColumns}>
               <div>
                 <h3>Typy základových náterov</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>
                     <strong>Penetračné:</strong> Pre pórovité povrchy ako betón
                   </li>
@@ -134,7 +135,7 @@ const Lesson6 = () => {
               </div>
               <div>
                 <h3>Aplikačné techniky</h3>
-                <ul className={styles.list}>
+                <ul className='list'>
                   <li>Štetcom pre malé plochy</li>
                   <li>Valčekom pre stredné plochy</li>
                   <li>Airless striekaním pre veľké plochy</li>

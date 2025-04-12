@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import LessonHero from '../../components/Layout/LessonHero';
 import styles from './Gallery.module.scss';
 
@@ -23,12 +22,20 @@ const GalleryPage = () => {
           img: '/images/gallery/art-2.png',
           title: 'Prírodná inšpirácia',
         },
-        { id: 3, img: '/images/gallery/art-3.png', title: 'Hodiny' },
-        { id: 4, img: '/images/gallery/art-4.jpg', title: 'Portrét' },
-        { id: 5, img: '/images/gallery/art-5.jpg', title: 'Zvieratá' },
-        { id: 6, img: '/images/gallery/art-6.jpg', title: 'Krajina' },
-        { id: 7, img: '/images/gallery/art-7.jpg', title: 'Moderné umenie' },
-        { id: 8, img: '/images/gallery/art-8.jpg', title: 'Súsošie' },
+        { id: 3, img: '/images/gallery/art-3.png', title: 'Nočná lampa' },
+        { id: 4, img: '/images/gallery/art-4.png', title: 'Hodiny' },
+        {
+          id: 5,
+          img: '/images/gallery/art-5.jpg',
+          title: 'Podložky pod poháre',
+        },
+        {
+          id: 6,
+          img: '/images/gallery/art-6.jpg',
+          title: 'Servírovacie dosky',
+        },
+        { id: 7, img: '/images/gallery/art-7.jpg', title: 'Pobrežná dioráma' },
+        { id: 8, img: '/images/gallery/art-8.jpg', title: 'Podnos' },
       ],
     },
     {
@@ -37,15 +44,27 @@ const GalleryPage = () => {
         { id: 101, img: '/images/gallery/jewelry-1.png', title: 'Náhrdelník' },
         { id: 102, img: '/images/gallery/jewelry-2.png', title: 'Náušnice' },
         { id: 103, img: '/images/gallery/jewelry-3.png', title: 'Prsteň' },
-        { id: 104, img: '/images/gallery/jewelry-4.png', title: 'Náramok' },
-        { id: 105, img: '/images/gallery/jewelry-5.jpg', title: 'Broš' },
-        { id: 106, img: '/images/gallery/jewelry-6.jpg', title: 'Čelenka' },
-        { id: 107, img: '/images/gallery/jewelry-7.jpg', title: 'Spona' },
-        { id: 108, img: '/images/gallery/jewelry-8.jpg', title: 'Prívesok' },
+        {
+          id: 104,
+          img: '/images/gallery/jewelry-4.jpg',
+          title: 'Sponky do vlasov',
+        },
+        {
+          id: 105,
+          img: '/images/gallery/jewelry-5.jpg',
+          title: 'Sada šperkov',
+        },
+        { id: 106, img: '/images/gallery/jewelry-6.jpg', title: 'Prstene' },
+        { id: 107, img: '/images/gallery/jewelry-7.jpg', title: 'Prívesky' },
+        {
+          id: 108,
+          img: '/images/gallery/jewelry-8.jpg',
+          title: 'Sponky do vlasov',
+        },
         {
           id: 109,
-          img: '/images/gallery/jewelry-9.jpg',
-          title: 'Náhrdelník 2',
+          img: '/images/gallery/jewelry-9.png',
+          title: 'Náramok',
         },
       ],
     },
@@ -57,15 +76,24 @@ const GalleryPage = () => {
           img: '/images/gallery/furniture-1.png',
           title: 'Epoxidový stôl',
         },
-        { id: 202, img: '/images/gallery/furniture-2.jpg', title: 'Police' },
+        { id: 202, img: '/images/gallery/furniture-2.jpg', title: 'Stôl' },
         { id: 203, img: '/images/gallery/furniture-3.png', title: 'Stolička' },
-        { id: 204, img: '/images/gallery/furniture-4.jpg', title: 'Stôl 2' },
-        { id: 205, img: '/images/gallery/furniture-5.jpg', title: 'Lampery' },
-        { id: 206, img: '/images/gallery/furniture-6.jpg', title: 'Knižnica' },
+        { id: 204, img: '/images/gallery/furniture-4.png', title: 'Posteľ' },
+        { id: 205, img: '/images/gallery/furniture-5.png', title: 'Lampery' },
+        {
+          id: 206,
+          img: '/images/gallery/furniture-6.jpg',
+          title: 'Malý stolík',
+        },
         {
           id: 207,
           img: '/images/gallery/furniture-7.jpg',
-          title: 'Barový pult',
+          title: 'Stolička',
+        },
+        {
+          id: 208,
+          img: '/images/gallery/furniture-8.png',
+          title: 'Nočný stolík',
         },
       ],
     },

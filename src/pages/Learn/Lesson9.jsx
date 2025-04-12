@@ -7,7 +7,7 @@ const Lesson9 = () => {
   const commonProblems = [
     {
       title: 'Nedostatočné vytvrdnutie',
-      image: '/images/uncured-resin.jpg',
+      image: '/images/uncured-resin..png',
       symptoms: [
         'Živica zostáva lepkavá',
         'Mäkký povrch po 24 hodinách',
@@ -26,7 +26,7 @@ const Lesson9 = () => {
     },
     {
       title: 'Žltnutie živice',
-      image: '/images/yellowing-resin.jpg',
+      image: '/images/yellowing-resin.png',
       symptoms: [
         'Žltý náter po čase',
         'Stratá priehľadnosť',
@@ -45,7 +45,7 @@ const Lesson9 = () => {
     },
     {
       title: 'Oddeľovanie od povrchu',
-      image: '/images/delamination.jpg',
+      image: '/images/delamination.png',
       symptoms: [
         'Praskliny na okrajoch',
         'Odlupovanie živice',
@@ -67,7 +67,7 @@ const Lesson9 = () => {
   const repairTechniques = [
     {
       title: 'Oprava nedostatočného vytvrdnutia',
-      image: '/images/repair-uncured.jpg',
+      image: '/images/repair-uncured.png',
       steps: [
         'Odstráňte nezatvrdnutú časť',
         'Dôkladne vyčistite povrch',
@@ -78,7 +78,7 @@ const Lesson9 = () => {
     },
     {
       title: 'Oprava žltnutia',
-      image: '/images/repair-yellowing.jpg',
+      image: '/images/repair-yellowing.png',
       steps: [
         'Jemne obrústeť povrch',
         'Aplikujte číru ochrannú vrstvu',
@@ -89,7 +89,7 @@ const Lesson9 = () => {
     },
     {
       title: 'Oprava odlupovania',
-      image: '/images/repair-delamination.jpg',
+      image: '/images/repair-delamination.png',
       steps: [
         'Odstráňte odlupujúce sa časti',
         'Aplikujte adhézny primer',
@@ -103,7 +103,6 @@ const Lesson9 = () => {
   const preventionTips = [
     {
       title: 'Správne podmienky',
-      image: '/images/proper-conditions.jpg',
       tips: [
         'Teplota 20-25°C',
         'Vlhkosť pod 60%',
@@ -112,12 +111,10 @@ const Lesson9 = () => {
     },
     {
       title: 'Kvalitné materiály',
-      image: '/images/quality-materials.jpg',
       tips: ['Overené značky živíc', 'Čerstvé zložky', 'Kompatibilné pigmenty'],
     },
     {
       title: 'Testovanie',
-      image: '/images/testing.jpg',
       tips: [
         'Vždy testujte na malom vzorke',
         'Skúšajte nové techniky',
@@ -140,9 +137,10 @@ const Lesson9 = () => {
             <h2>Bežné problémy a ich identifikácia</h2>
             <div className='imageTextRow'>
               <img
-                src='/images/'
+                src='/images/bezne_problemy.png'
                 alt='Bežné problémy'
                 className='halfWidthImage'
+                loading='lazy'
               />
               <div>
                 <p>
@@ -169,6 +167,7 @@ const Lesson9 = () => {
                       src={problem.image}
                       alt={problem.title}
                       className={styles.problemImage}
+                      loading='lazy'
                     />
                     <h3>{problem.title}</h3>
                   </div>
@@ -214,6 +213,7 @@ const Lesson9 = () => {
                       src={tech.image}
                       alt={tech.title}
                       className={styles.techImage}
+                      loading='lazy'
                     />
                   </div>
                   <div className={styles.techContent}>
@@ -246,13 +246,7 @@ const Lesson9 = () => {
             <div className={styles.preventionGrid}>
               {preventionTips.map((tip, index) => (
                 <div key={index} className={styles.tipCard}>
-                  <div className={styles.tipImageContainer}>
-                    <img
-                      src={tip.image}
-                      alt={tip.title}
-                      className={styles.tipImage}
-                    />
-                  </div>
+                  <div className={styles.tipImageContainer}></div>
                   <div className={styles.tipContent}>
                     <h3>{tip.title}</h3>
                     <ul>
@@ -271,11 +265,6 @@ const Lesson9 = () => {
             <h2>Záverečné rady</h2>
             <div className={styles.finalTips}>
               <div className={styles.finalTip}>
-                <img
-                  src='/images/patience.jpg'
-                  alt='Trpezlivosť'
-                  className={styles.finalTipImage}
-                />
                 <div>
                   <h3>Trpezlivosť je kľúč</h3>
                   <p>
@@ -286,11 +275,6 @@ const Lesson9 = () => {
                 </div>
               </div>
               <div className={styles.finalTip}>
-                <img
-                  src='/images/learning.jpg'
-                  alt='Učenie'
-                  className={styles.finalTipImage}
-                />
                 <div>
                   <h3>Učte sa z chýb</h3>
                   <p>

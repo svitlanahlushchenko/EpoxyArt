@@ -2,21 +2,76 @@
 <html lang="sk">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/public/images/logo.png" />
+    <!-- Покращений favicon (краще використовувати .ico) -->
+    <!-- Стандартна іконка -->
+    <link rel="icon" href="%PUBLIC_URL%/icons/favicon.ico" />
+
+    <!-- Для сучасних браузерів (SVG або PNG) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/icons/icon.svg" />
+
+    <!-- Для iOS -->
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/icons/apple-touch-icon.png"
+    />
+
+    <!-- Для Windows 8+ -->
+    <meta
+      name="msapplication-TileImage"
+      content="%PUBLIC_URL%/icons/ms-icon-144x144.png"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- Видалено дублюючий meta description -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Naučte sa vytvárať šperky, nábytok a umelecké diela z epoxidovej živice. Krok za krokom, pre začiatočníkov aj pokročilých."
     />
-    <link rel="con" href="/public/images/logo.png" />
+
+    <!-- Виправлено помилку (замість rel="con" має бути rel="canonical", якщо потрібно) -->
+    <link rel="canonical" href="https://vash-site.sk/" />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Epoxy Art</title>
+    <!-- Оптимізований title (трохи скорочено) -->
+    <title>Výučba práce s epoxidovou živicou | Kurzy pre začiatočníkov</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ВАШ_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-ВАШ_ID');
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Schema.org з реальними даними -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": "Kurzy práce s epoxidovou živicou",
+        "description": "Online výučba tvorby z epoxidovej živice pre začiatočníkov a pokročilých.",
+        "image": "https://vash-site.sk/images/my-clock.jpg", <!-- Замініть на реальне посилання -->
+        "provider": {
+          "@type": "Organization",
+          "name": "Epoxy Art",
+          "url": "https://vash-site.sk"
+        }
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
