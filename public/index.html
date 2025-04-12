@@ -2,50 +2,56 @@
 <html lang="sk">
   <head>
     <meta charset="utf-8" />
-    <!-- Покращений favicon (краще використовувати .ico) -->
-    <!-- Стандартна іконка -->
-    <link rel="icon" href="%PUBLIC_URL%/icons/favicon.ico" />
 
-    <!-- Для сучасних браузерів (SVG або PNG) -->
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/icons/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
-      href="%PUBLIC_URL%/icons/favicon-32x32.png"
       sizes="32x32"
+      href="%PUBLIC_URL%/icons/favicon-32x32.png"
     />
     <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/icons/icon.svg" />
-
-    <!-- Для iOS -->
     <link
       rel="apple-touch-icon"
       href="%PUBLIC_URL%/icons/apple-touch-icon.png"
     />
 
-    <!-- Для Windows 8+ -->
-    <meta
-      name="msapplication-TileImage"
-      content="%PUBLIC_URL%/icons/ms-icon-144x144.png"
-    />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
-    <!-- Видалено дублюючий meta description -->
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
       content="Naučte sa vytvárať šperky, nábytok a umelecké diela z epoxidovej živice. Krok za krokom, pre začiatočníkov aj pokročilých."
     />
 
-    <!-- Виправлено помилку (замість rel="con" має бути rel="canonical", якщо потрібно) -->
-    <link rel="canonical" href="https://vash-site.sk/" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://epoxyart.netlify.app/" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="Výučba práce s epoxidovou živicou | Kurzy pre začiatočníkov"
+    />
+    <meta
+      property="og:description"
+      content="Naučte sa vytvárať šperky, nábytok a umelecké diela z epoxidovej živice."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://epoxyart.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://epoxyart.netlify.app/images/my-clock.jpg"
+    />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <!-- Оптимізований title (трохи скорочено) -->
     <title>Výučba práce s epoxidovou živicou | Kurzy pre začiatočníkov</title>
+
+    <!-- Google Analytics -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ВАШ_ID"
+      src="https://www.googletagmanager.com/gtag/js?id=G-0108CBE304"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -53,25 +59,27 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-      gtag('config', 'G-ВАШ_ID');
+      gtag('config', 'G-0108CBE304');
     </script>
   </head>
   <body>
-    <!-- Schema.org з реальними даними -->
+    <!-- Schema.org Markup -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LearningResource",
         "name": "Kurzy práce s epoxidovou živicou",
         "description": "Online výučba tvorby z epoxidovej živice pre začiatočníkov a pokročilých.",
-        "image": "https://vash-site.sk/images/my-clock.jpg", <!-- Замініть на реальне посилання -->
+        "image": "https://epoxyart.netlify.app/images/my-clock.jpg",
+        "url": "https://epoxyart.netlify.app",
         "provider": {
           "@type": "Organization",
           "name": "Epoxy Art",
-          "url": "https://vash-site.sk"
+          "url": "https://epoxyart.netlify.app"
         }
       }
     </script>
+
     <div id="root"></div>
   </body>
 </html>
