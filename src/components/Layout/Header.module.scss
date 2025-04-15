@@ -6,67 +6,129 @@
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
 }
 
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.logoImage {
+  height: 40px;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $text-dark;
+}
+
+// Бургер кнопка
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: $text-dark;
+    transition: all 0.3s ease;
+  }
+}
+
+// Меню
 .menu {
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  li {
+    display: block;
+  }
+
+  .link {
+    color: $text-dark;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+    position: relative;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $primary;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .closeButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: $text-dark;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
 }
 
-.link {
-  color: $text-dark;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-  padding: 0.5rem 0;
-  position: relative;
-
-  &:hover {
-    color: $primary;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: $primary;
-    transition: width 0.3s;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
-}
-
+// Адаптив
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .logoLink {
-    margin-bottom: 1rem;
+  .burger {
+    display: flex;
   }
 
   .menu {
-    width: 100%;
-    justify-content: space-around;
-    gap: 0.5rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 220px;
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+
+  .closeButton {
+    display: block;
   }
 }
